@@ -16,9 +16,11 @@ const products = [
 ];
 
 // Trouver le produit le plus cher avec reduce
-const { name, price } = products;
+const mostExpensiveProduct = products.reduce((acc, product) =>
+  product.price > acc.price ? product : acc
+);
 
-const mostExpensiveProduct = console.log(
+console.log(
   `Le produit le plus cher est : ${mostExpensiveProduct.name} au prix de ${mostExpensiveProduct.price} €`
 );
 

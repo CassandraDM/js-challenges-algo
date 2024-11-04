@@ -17,5 +17,3 @@ rl.on('close', function () {
   process.exit(0);
 });
 ```
-
-firstEvenNumber, mustExpensiveProduct, productsPrice, scoring, uniqueValueArray

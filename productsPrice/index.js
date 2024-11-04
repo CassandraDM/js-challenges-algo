@@ -22,7 +22,7 @@ const { name, price } = updatedProducts;
 
 updatedProducts.forEach((product) => {
   if (product.name.includes("Promo")) {
-    product.price = product.price;
+    product.price = product.price * 0.8;
   }
 });
 
